@@ -1,6 +1,6 @@
 # Overview 
 
-[Plplot](http://plplot.sourceforge.net/) library ocaml bindings.
+[Plplot](http://plplot.sourceforge.net/) 5.10.0 library ocaml bindings.
 Plplot library contains ocaml bindings. It can be installed with operating
 system package manager.
 
@@ -14,7 +14,6 @@ caused to build and install plplot from sources.
 
 Current project offers other solution: 
  * install plplot library from your operating system package manager
- * download plplot library source from package manager
  * build and install ocaml bindings from source with opam
   
 
@@ -28,7 +27,6 @@ $ apt-get install libplplot-dev
 
 Build and install bindings with opam:
 ```bash
-$ sh download-source.sh
 $ oasis setup
 $ ./configure
 $ make

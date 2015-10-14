@@ -1,6 +1,6 @@
 OASISFormat: 0.4
 Name:        ocaml-plplot
-Version:     
+Version:     5.10.0
 Synopsis:    Plplot library ocaml bindings
 Authors:     feseal
 License:     GPL
