@@ -1,0 +1,13 @@
+*.ba*
+*.clib
+*.mldylib
+*.mllib
+*.mlpack
+*.odocl
+*.native
+/_build/
+/Makefile
+META
+/setup.data
+/setup.log
+

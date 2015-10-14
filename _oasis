@@ -1,0 +1,283 @@
+OASISFormat: 0.4
+Name:        ocaml-plplot
+Version:     
+Synopsis:    Plplot library ocaml bindings
+Authors:     feseal
+License:     GPL
+Plugins:     META (0.4), DevFiles (0.4)
+BuildTools: ocamlbuild, camlp4o
+
+Library plplot
+    Path: lib
+    Modules: Plplot
+    InternalModules: Plplot_core
+    CCOpt: -I$pkg_camlidl -I/usr/include/plplot
+    CCLib: -L$pkg_camlidl -lcamlidl -lplplotd 
+    CSources: plplot_h.inc,
+              plplot_core.idl,
+              plplot_core.h,
+              plplot_core_stubs.c,
+              plplot_impl.c
+    BuildDepends: camlidl
+
+Library plcairo
+    Path: lib/plcairo
+    FindlibName: plcairo
+    FindlibParent: plplot
+    Modules: Plcairo
+    CCOpt: -I/usr/include/plplot -I/usr/include/cairo
+    CSources: plcairo_impl.c
+    BuildDepends: cairo , cairo.lablgtk2, plplot
+
+Executable x00
+    Path: examples
+    MainIs: x00.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x01
+    Path: examples
+    MainIs: x01.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x02
+    Path: examples
+    MainIs: x02.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x03
+    Path: examples
+    MainIs: x03.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x04
+    Path: examples
+    MainIs: x04.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x05
+    Path: examples
+    MainIs: x05.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x06
+    Path: examples
+    MainIs: x06.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x07
+    Path: examples
+    MainIs: x07.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x08
+    Path: examples
+    MainIs: x08.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x09
+    Path: examples
+    MainIs: x09.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x10
+    Path: examples
+    MainIs: x10.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x11
+    Path: examples
+    MainIs: x11.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x12
+    Path: examples
+    MainIs: x12.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x13
+    Path: examples
+    MainIs: x13.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x14
+    Path: examples
+    MainIs: x14.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x15
+    Path: examples
+    MainIs: x15.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x16
+    Path: examples
+    MainIs: x16.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x17
+    Path: examples
+    MainIs: x17.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot, unix
+
+Executable x18
+    Path: examples
+    MainIs: x18.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x19
+    Path: examples
+    MainIs: x19.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x20
+    Path: examples
+    MainIs: x20.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x21
+    Path: examples
+    MainIs: x21.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x22
+    Path: examples
+    MainIs: x22.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x23
+    Path: examples
+    MainIs: x23.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x24
+    Path: examples
+    MainIs: x24.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x25
+    Path: examples
+    MainIs: x25.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x26
+    Path: examples
+    MainIs: x26.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x27
+    Path: examples
+    MainIs: x27.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x28
+    Path: examples
+    MainIs: x28.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x29
+    Path: examples
+    MainIs: x29.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x30
+    Path: examples
+    MainIs: x30.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x31
+    Path: examples
+    MainIs: x31.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x33
+    Path: examples
+    MainIs: x33.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable x34
+    Path: examples
+    MainIs: x34.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
+
+Executable xgtk_interface
+    Path: examples
+    MainIs: xgtk_interface.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot, plplot.plcairo, 
+                  lablgtk2, lablgtk2.auto-init
+
+Executable xplot01
+    Path: examples
+    MainIs: xplot01.ml
+    CompiledObject: best
+    Install: false
+    BuildDepends: plplot
